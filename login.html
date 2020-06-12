@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Login</title>
+<link rel="stylesheet" href="css login/style.css">
+</head>
+
+<body oncontextmenu="return false">
+
+	<header class="main-header">
+		<h1>FAMILY LOGIN PAGE</h1>
+	</header>
+
+  <div class="body"></div>
+
+		<form name="login">
+		<div class="login">
+			<h1>LOGIN</h1>
+			<div>
+				<div class="text-box">
+					<i class="fa fa-user" aria-hidden="true"></i>
+				<input type="text" placeholder="username" name="userid"><br>
+			</div>
+			<div class="text-box">
+				<input type="password" placeholder="password" name="pswrd"><br>
+			</div>
+			<br>
+				<input type="button" onclick="check(this.form)" value="Login"/>
+		</div>
+
+
+
+</form>
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.userid.value == "admin" && form.pswrd.value == "admin")
+  {
+    window.open('mainpage.html')
+	window.close('login.html')
+  }
+ else
+ {
+   alert("You have  entered the wrong password!")
+  }
+}
+</script>
+</body>
+</html>

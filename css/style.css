@@ -1,0 +1,113 @@
+body{
+    background-image: url(../images/family\ background.jpg);
+    margin: auto;
+    color: blanchedalmond;
+}
+#main-header{
+    text-align: center;
+    background-color:black;
+    color: red;
+}
+#main-header p{
+    color: yellowgreen;
+}
+#main-header h1{
+    color:blanchedalmond;
+}
+#main-nav{
+    background-color: skyblue;
+    padding: 20px;
+}
+#main-nav ul{
+    float: right;
+}
+#main-nav ul li{
+    display: inline-block;
+    padding: 5px;
+
+}
+#main-nav ul li a{
+    color: white;
+    padding: 10px;
+}
+#main-logo{
+    padding: 10px;
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 400px;
+
+}
+.center{
+    float: right;
+    border: 4px solid skyblue;
+    width: 200px;
+    border-radius: 28px;
+    display: block;
+    top:30%;
+    left:90%;
+}
+.listone{
+    font-size: 15px;
+    border:2px solid crimson;
+    width: 300px;
+    background-color:cyan;
+    float: right;
+    border-radius: 28px;
+
+}
+h1{
+    color: chartreuse;
+    text-decoration: underline;
+}
+.listone h1{
+    font-size: 11px;
+}
+
+.listone li{
+    list-style: none;
+    padding: 1em;
+   
+} 
+.footer{
+    background-color: orangered;
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+.picsart{
+    background-color: cadetblue;
+    width: fit-content;
+    border: 3px solid gold;
+    display: block;
+    float: right;
+    border-radius: 20px;
+}
+.familyvalues{
+    background-color:royalblue;
+    color: black;
+}
+.familyvalues h1{
+    color: red;
+}
+@media (max-width: 700px) {
+    .top-container {
+      grid-template-areas:
+        'showcase showcase'
+        'top-box-a top-box-b';
+    }
+  
+    .showcase h1 {
+      font-size: 2.5rem;
+    }
+  
+    .main-nav ul {
+      grid-template-columns: 1fr;
+    }
+    @media(max-width:500px) {
+        .top-container {
+            grid-template-areas:
+              'showcase showcase'
+              'top-box-a top-box-b';
+          }
+    }

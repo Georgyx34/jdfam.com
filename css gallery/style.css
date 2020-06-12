@@ -1,0 +1,60 @@
+body{
+    background-color: whitesmoke;
+}
+#main-section{
+    background-color:black;
+    color: blanchedalmond;
+    padding: 15px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
+#main-nav{
+        background-color:skyblue;
+        padding: 20px;
+}
+#main-nav ul{
+       float: right;
+}
+
+#main-nav ul li{
+    display: inline-block;
+}
+
+#main-nav ul li a{
+    color: blanchedalmond;
+    display: inline-block;
+    border-radius: 24px;
+}
+#main-logo{
+    font-weight: 400;
+    font-size: 25px;
+    color: cornsilk;
+}
+.main-header{
+    background-color:greenyellow;
+    padding: 10px;
+    text-align: center;
+}
+#main-nav a :active, a:hover{
+    background-color: blue;
+    transition: 0.5s;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+}
+.wrapper > div:nth-child(odd){
+    border: black 1px solid;
+  padding: 1em;
+}
+.wrapper > div:nth-child(even){
+    border: black 1px solid;
+}
+.wrapper > div{
+padding: 1em;
+
+}

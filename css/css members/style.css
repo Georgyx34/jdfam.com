@@ -1,0 +1,127 @@
+body{
+   background-color:grey;
+   background-image: url(../images/family\ background.jpg);
+    color: aliceblue;
+}
+#main-header{
+    background-color:#34495e;
+    color:greenyellow;
+    text-align: center;
+    padding: 10px;
+}
+#main-header p{
+    font-style: italic;
+    color: red;
+
+}
+.listone{
+    border: 3px solid red;
+    color: white;
+    list-style: none;
+    border-radius: 30px;
+    width: 300px;
+    background-color:navy;
+    float: right;
+
+min-height: fit-content;
+}
+.listone li a{
+    color: greenyellow;
+    font-style: italic;
+}
+.listone h1{
+    color: orangered;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer{
+    background-color: orange;
+    padding: 5px;
+    text-align: center;
+}
+#main-nav{
+    background-color: skyblue;
+    padding: 10px;
+}
+#main-logo{
+    font-size: 35px;
+    font-weight: bold;
+}
+#main-nav ul{
+    float: right;
+}
+#main-nav ul li{
+    display: inline-block;
+    
+}
+.picsart{
+    border:2px solid firebrick;
+    background-color:grey;
+    padding: 20px;
+    border-radius:38px ;
+    width: 300px;
+    float: left;
+}
+#main-nav ul li a{
+    color: cornsilk;
+    border-radius: 24px;
+    font-size:15px;
+    padding: 7px 13px;
+    border-radius: 13px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#main-nav a.active,a:hover{
+    background-color:skyblue;
+    transition: 0.5s;
+}
+#main-section{
+    background-color:black;
+    font-style: italic;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px,auto);
+    
+}
+.wrapper > div:nth-child(odd){
+background:gray;
+}
+.wrapper > div{
+padding:1em;
+grid-auto-columns: minmax(100px,50px);
+}
+.nested{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows:minmax(100px,auto);
+    grid-gap: 1em;
+    grid-column: 1;
+    grid-row: 1/2;
+    object-fit: cover;
+    
+}
+.nested >div{
+    border: #333 1px solid;
+    padding: 1em;
+
+
+}
+.nested > div:nth-child(odd){
+    background-color: indigo;
+}
+.nested >div :nth-child(even){
+    background-color:orange;
+}
+h1{
+    color: greenyellow;
+    font-size: 20px;
+}
+.center{
+    display: block;
+    float: right;
+    border: 3px solid greenyellow;
+    border-radius: 28px;
+}

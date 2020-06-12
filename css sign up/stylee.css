@@ -1,0 +1,72 @@
+body{
+    background-image: url(../images/family\ background.jpg);
+    font-size:16px;
+}
+.mainheader{
+    background-color: cadetblue;
+    text-align: center;
+
+}
+.mainnav{
+    background-color: skyblue;
+    padding: 20px;
+    margin: 20px auto;
+}
+.mainnav ul{
+    float: right;
+}
+.mainnav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+.mainnav ul li a{
+    color: blue;
+}
+.mainlogo{
+    color: cornsilk;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.wrapper{
+    text-align: center;
+    background-color:#34495e;
+   width:900px;
+   top: 80%;
+   left:50%;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   border-radius: 28px;
+
+    
+}
+.wrapper input{
+    font-size: 16px;
+    padding:10px;
+    border: solid 1px blue;
+    border-radius: 24px;
+    margin: 10px auto;
+    outline: none;
+    display: inline-block;
+    width: 200px;
+    color: black;
+   
+}
+.wrapper input[type='submit']{
+    border: 0;
+    color: cornsilk;
+    background: none;
+    display: block;
+    text-align: center;
+    border: 2px solid black;
+    width: 200px;
+    outline: none;
+    border-radius: 15px;
+    transition: 0.25s;
+    cursor: pointer;
+    border-color: chartreuse;
+    text-align: center;
+}
+.wrapper input[type='submit']:hover{
+    background: blue;
+}

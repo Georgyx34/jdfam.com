@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="mycss/style.css">
+    <link rel="shortcut icon" type="image.png" href="images/imageeee.png">
+</head>
+<body oncontextmenu="return false">
+    <header class="mainheader">
+        <h1>FAMILY LOGIN</h1> 
+    </header>
+    <form method="POST" action="#">
+    <div class="login-box">
+        <h1>LOGIN</h1>
+        <div class="text-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="username" name="userid">
+        </div>
+        <div class="text-box">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Password" name="pswrd">
+        </div>
+        <br>
+        <br>
+        <input type="button" onclick="check(this.form)" value="Login"/>
+
+
+    </div>
+</form>
+<script language="javascript">
+    function check(form)
+    {
+     
+     if(form.userid.value == "admin" && form.pswrd.value == "JDFam2020")
+      {
+        window.open('mainpage.html');
+        window.close('index.html')
+      }
+     else
+     {
+       alert("You have entered the wrong password!")
+      }
+    }
+    </script>
+
+   </body>
+</html>
